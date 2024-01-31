@@ -19,7 +19,11 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.testcontainers:junit-jupiter")
-    //add dependencies as needed
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("com.h2database:h2")
+    implementation("org.projectlombok:lombok")
+    implementation("io.springfox:springfox-boot-starter:3.0.0")
+    annotationProcessor("org.projectlombok:lombok")
 }
 
 tasks.withType<Test> {
